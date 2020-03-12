@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        rect.background {
+            fill: midnightblue;
+            stroke:black;
+            stroke-width:3px ;
+        }
+        circle.ball {
+            fill:white;
+        }
+        circle.eye {
+            fill:black;
+        }
+        polyline.arm {
+            fill:transparent;
+            stroke:brown;
+            stroke-width: 1;
+        }
+        ellipse.halo {
+            fill:transparent;
+            stroke-width: 2px;
+            stroke:gold
+        }
+        polyline.mouth {
+            stroke:gray;
+            fill:transparent
+        }
+    </style>
+</head>
+<body>
+    <svg width="100" height="100" viewbox="0 0 100 100">
+        <rect class="background" width="100" height="100"/>
+        <circle class="ball" cx="50" cy="70" r="20" id=""/>
+        <circle class="ball" cx="50" cy="45" r="15" id=""/>
+        <circle class="ball" cx="50" cy="25" r="10" id=""/>
+        <circle class="eye" cx="55" cy="20" r="2" id=""/>
+        <circle class="eye" cx="45" cy="20" r="2" id=""/>
+        <circle class="ball" cx="50" cy="70" r="20" id=""/>
+        <ellipse class="halo" cx="50" cy="10" rx="7" ry="3" />
+        <polyline class="mouth" points="53,28 52,29 51,30 46,29"/>
+        <polyline class="arm" points="37,38 28,40 18,46 15,60"/>
+        <polyline class="arm" points="18,46 4,50"/>
+        <polyline class="arm" points="18,46 10,56"/>
+        <polyline class="arm" points="63,38 80,40 90,58"/>
+        <polyline class="arm" points="85,48 96,54"/>
+        <polyline class="arm" points="85,48 80,60 "/>
+    </svg>
+</body>
+</html>
