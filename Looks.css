@@ -32,6 +32,8 @@ div.menu {
 
 div.mainContent {
     grid-area: mainContent;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 div.footer {
