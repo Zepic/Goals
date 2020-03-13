@@ -5,26 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <h1 id="riktig" style="display: none;">Riktig</h1>
-    <h1 id="feil" style="display: none;">Feil</h1>
+<body onload="testOnLoad()">
+    <h1 id="right" style="display: none;">Right</h1>
+    <h1 id="wrong" style="display: none;">Wrong</h1>
+    <h3>Which weekday is domingo in Spanish and dimanche in French?</h3>
     <div>
-        <button onclick="feil()" id="svar1" >nei</button>
-        <button onclick="riktig()" id="svar2" >maybe</button>
-        <button onclick="feil()" id="svar3" >ja</button>
+        <button onclick="wrong()" >Monday</button>
+        <button onclick="wrong()" >Tuesday</button>
+        <button onclick="wrong()" >Wednesday</button>
+        <button onclick="wrong()" >Thursday</button>
+        <button onclick="wrong()" >Friday</button>
+        <button onclick="wrong()" >Saturday</button>
+        <button onclick="right()" >Sunday</button>
     </div>
+
+    
+    <input type="text" onchange="testOnChange()" oninput="testOnInput()" />
+    <h3 onmouseover="testOnMouseOver()" onmouseout="testOnMouseOut()"></h3>
+    <h2 id="info"></h2>
 
 
     <script>
-        function feil() {
-            document.getElementById("feil").style.display="block"
-            document.getElementById("riktig").style.display="none"
+        function wrong() {
+            document.getElementById("wrong").style.display="block"
+            document.getElementById("right").style.display="none"
         }
-        function riktig() {
-            document.getElementById("riktig").style.display="block"
-            document.getElementById("feil").style.display="none"
+        function right() {
+            document.getElementById("right").style.display="block"
+            document.getElementById("wrong").style.display="none"
+        }
+        function testOnLoad() {
+            console.log(Load);
         }
 
+        function testOnChange() {
+            console.log(Change);
+        }
+
+        function testOnInput() {
+            console.log(Input);
+        }
+
+        function testOnMouseOver() {
+            console.log(MouseOver);
+        }
+
+        function testOnMouseOut() {
+            console.log(MouseOut);
+        }
     </script>
 </body>
 </html>
